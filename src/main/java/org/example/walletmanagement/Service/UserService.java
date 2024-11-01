@@ -32,5 +32,10 @@ public class UserService {
         this.userRepository.save(user);
     }
 
+    public User getUserByUsername(String username){
+
+        return this.userRepository.findByUsername(username);
+    }
+
 
 }
